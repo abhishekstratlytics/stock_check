@@ -134,7 +134,7 @@ def main():
     merged_df = pd.merge(df, df3, on='Symbol', how='left')
     df1=merged_df.copy()
     b = st.text_input("How Much do you want to invest?",value = 1000000)
-    total_investment= float(b)
+    total_investment= int(b)
 
     #df1['Price Criteria'] = df1['Price'] < (0.05 * total_investment)
     #df1['Return Criteria'] = df1['return'] > 0
