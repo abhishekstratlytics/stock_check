@@ -2,19 +2,19 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt 
-import plotly  
+#import matplotlib.pyplot as plt 
+#import plotly  
 #from plotly import graph_objs as go 
 # from sklearn.ensemble import RandomForestRegressor
 # from xgboost import XGBRegressor
 # from statsmodels.tsa.arima.model import ARIMA
-import datetime
+#import datetime
 # import pmdarima as pm
 # from sklearn.metrics import mean_absolute_error as mae
 # import statsmodels.api as sm
 # from statsmodels.tsa.stattools import adfuller
 # from statsmodels.tsa.stattools import acf,pacf
-import itertools 
+#import itertools 
 
 
 ### Naming the app with an icon
