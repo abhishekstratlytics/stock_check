@@ -46,7 +46,8 @@ def main():
     #rp = pd.read_csv('prices.csv') #raw prices
     data.rename(columns={ data.columns[1]: "Date" }, inplace = True)
     rp = data.copy()
-    rp['Date']=pd.to_datetime(rp['Date'])
+    #rp['Date']=pd.to_datetime(rp['Date'])
+    rp['Date'] = rp['Date'].astype('datetime64[ns]')
     rp = rp[['Date','SYMBOL',' CLOSE_PRICE']]
     processed_prices = rp.pivot_table(index='Date',columns='SYMBOL',values=' CLOSE_PRICE')
     processed_prices = processed_prices.dropna(axis=1)
