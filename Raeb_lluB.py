@@ -14,7 +14,7 @@ import datetime
 # import statsmodels.api as sm
 # from statsmodels.tsa.stattools import adfuller
 # from statsmodels.tsa.stattools import acf,pacf
-#import itertools 
+import itertools 
 
 
 ### Naming the app with an icon
@@ -133,8 +133,8 @@ def main():
     df3.columns=['Symbol','return']
     merged_df = pd.merge(df, df3, on='Symbol', how='left')
     df1=merged_df.copy()
-    b = st.text_input("How Much do you want to invest?",value = 1000000)
-    total_investment= int(b)
+    b = st.text_input("Enter for how many days do you want to calculate the Moving Average",value = 1000000)
+    total_investment= float(b)
 
     #df1['Price Criteria'] = df1['Price'] < (0.05 * total_investment)
     #df1['Return Criteria'] = df1['return'] > 0
